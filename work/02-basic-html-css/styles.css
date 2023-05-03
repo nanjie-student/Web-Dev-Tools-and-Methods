@@ -1,0 +1,30 @@
+.html, body{
+    display: block;
+}
+.header-panel{
+    background-color: aquamarine;
+}
+.messages {
+    background-color: pink;
+}
+.header-link {
+    display: flex;
+    flex-direction: row;
+}
+.page {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.animals {
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    list-style-type: upper-alpha;
+}
+.bottom{
+    background-color: aquamarine;
+}

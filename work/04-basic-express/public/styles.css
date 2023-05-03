@@ -1,0 +1,136 @@
+*, *::before, *::after { 
+    box-sizing: border-box;
+}
+  
+html, body { 
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+h1{
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  text-align:center;
+}
+#chat-app { 
+    display: grid;
+    border: 1px solid black;
+    border-style: solid;
+    grid-template-areas: 
+      "userlist chatlist"
+      "formpart formpart"
+    ;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+  
+    height: 100%;
+}
+.userlist{
+  grid-area: userlist;
+  border: 1px solid black;
+  width: 100px;
+} 
+h2 {
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 32px;
+   margin: 0 0 72px; 
+   text-align: center;
+} 
+.users { 
+    grid-area: users;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    border: 2px;
+    list-style-type: none;
+}
+.chatlist{
+  grid-area: chatlist;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  list-style-type: none;
+  background-color:aquamarine;
+}  
+.messages { 
+    grid-area: messages;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    list-style-type: none;
+    background-color: aquamarine;
+}
+.sender-info { 
+  display: flex;
+  width: 10rem;
+} 
+.img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 310px;
+  border-radius: 15px;
+}
+.avatar { 
+    height: 3rem;
+}
+.username { 
+    margin: auto 1rem;
+}
+.message-text{
+  padding: 0;
+  margin: 0;
+  height: 3rem;
+  border: 1px;
+  border-radius: 1px;
+  background-color: greenyellow;
+} 
+.formpart { 
+  grid-area: formpart;
+  margin: 2rem;
+}
+form {
+  display: flex;
+  background-color: #ddd;
+  padding: 20px;
+  margin-top: 20px;
+}
+input{
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+} 
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button :hover {
+  background-color: #555;
+}
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}  

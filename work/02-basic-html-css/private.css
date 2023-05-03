@@ -1,0 +1,40 @@
+.html,body{
+    display: block;
+    margin: auto;
+    font-family: sans-serif;
+}
+.header-panel{
+    background-color: aquamarine;
+}
+.messages {
+    background-color: pink;
+}
+.header-link {
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contents {
+    font-size: 150%;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+.content-two{
+    margin: 0;
+}
+.contents::first-letter {
+    color: brown;
+}

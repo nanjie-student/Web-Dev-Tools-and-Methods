@@ -1,0 +1,130 @@
+*, *::before, *::after { 
+    box-sizing: border-box;
+  }
+  
+html, body { 
+  height: 100%;
+  margin: 0;
+  background-color: yellowgreen;
+  font-family: sans-serif;
+}
+header{
+  background-color:#C0FFEE;
+  margin: 0;
+  justify-content: center;
+  justify-items: center;
+}
+main{
+  background-color: yellowgreen;
+
+}
+h1{
+  text-align: center;
+}
+form {
+  position: relative;
+  display: block;
+  border-radius: 2rem;
+  flex-direction: cloumn;
+  text-align: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin: 8rem auto;
+  max-width: 500px;
+  max-height: 200px;
+  background-color: papayawhip;
+}
+form input {
+  grid-column: span 2;
+  margin-bottom: 1rem;
+}
+form label {
+  display: block;
+  cursor: default;
+}
+button {
+  background-color: lightgray;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+.user {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+footer{
+  background-color: #C0FFEE;
+  justify-content: center;
+  justify-items: center;
+}
+@media screen  and(min-width: 44rem){
+  html, body { 
+    height: 100%;
+    margin: 0;
+    background-color: yellowgreen;
+    font-family: sans-serif;
+  }
+  header{
+    background-color:#C0FFEE;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+  }
+  main{
+    background-color: yellowgreen;
+  
+  }
+  h1{
+    text-align: center;
+  }
+  form {
+    position: relative;
+    display: block;
+    border-radius: 2rem;
+    flex-direction: cloumn;
+    text-align: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin: 8rem auto;
+    width: 500px;
+    height: 200px;
+    background-color: papayawhip;
+  }
+  form input {
+    grid-column: span 2;
+    margin-bottom: 1rem;
+  }
+  form label {
+    display: block;
+    cursor: default;
+  }
+  button {
+    background-color: lightgray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  footer{
+    background-color: #C0FFEE;
+    justify-content: center;
+    justify-items: center;
+  }
+}
